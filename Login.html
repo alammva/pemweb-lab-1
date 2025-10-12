@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Pengguna</title>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Formulir Pendaftaran</h1>
+
+    <!-- Fieldset sebagai pembungkus seluruh elemen form -->
+    <fieldset>
+        <legend>Data Pendaftaran Akun</legend>
+        <br>
+
+        <!-- Input nama -->
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Nur Alam Fajar Abdullah" style="margin-bottom: 10px;">
+
+        <br>
+        <!-- Input NIM -->
+        <label for="nim">Nomor Induk Mahasiswa (NIM):</label><br>
+        <input type="number" id="nim" name="nim" pattern="[0-9]{10}" placeholder="202431139" style="margin-bottom: 10px;">
+
+        <br>
+        <!-- Input email -->
+        <label for="email">Alamat Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="drixwalker@gmail.com" style="margin-bottom: 10px;">
+
+        <br>
+        <!-- Pilihan jenis kelamin -->
+        <label>Jenis Kelamin:</label><br><br>
+        <input type="radio" id="lk" name="gender" value="laki-laki">
+        <label for="lk">Laki-laki</label>
+        <input type="radio" id="pr" name="gender" value="perempuan">
+        <label for="pr">Perempuan</label>
+
+        <br><br>
+        <!-- Pilihan agama -->
+        <label for="agama">Agama:</label><br>
+        <select id="agama" name="agama" style="margin-bottom: 10px;">
+            <option value="">-- Pilih Agama --</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+        </select>
+
+        <br>
+        <!-- Password -->
+        <label for="password">Kata Sandi:</label><br>
+        <input type="password" id="password" name="password" placeholder="contoh: sandi123" style="margin-bottom: 10px;">
+
+        <br>
+        <!-- Konfirmasi password -->
+        <label for="confirm_password">Ulangi Kata Sandi:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" style="margin-bottom: 15px;">
+
+        <br>
+        <!-- Tombol submit -->
+        <input type="submit" value="Kirim Data">
+    </fieldset>
+</body>
+</html>
